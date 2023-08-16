@@ -5,6 +5,7 @@ Rename the Crypto_Clustering_starter_code.ipynb file as Crypto_Clustering.ipynb.
 Load the crypto_market_data.csv into a DataFrame.
 
 Get the summary statistics and plot the data to see what the data looks like before proceeding.
+![Picture1](https://github.com/SteliosKosmidis/Cryptoclustering/assets/125541671/00387dd6-f66a-489f-bbc7-aa1a8581b766)
 
 Prepare the Data
 Use the StandardScaler() module from scikit-learn to normalize the data from the CSV file.
@@ -17,6 +18,7 @@ The first five rows of the scaled DataFrame
 
 Find the Best Value for k Using the Original Scaled DataFrame
 Use the elbow method to find the best value for k using the following steps:
+![bokeh_plot](https://github.com/SteliosKosmidis/Cryptoclustering/assets/125541671/df632da0-1117-4a35-9a94-f967a321392d)
 
 Create a list with the number of k values from 1 to 11.
 Create an empty list to store the inertia values.
@@ -31,6 +33,8 @@ Initialize the K-means model with the best value for k.
 Fit the K-means model using the original scaled DataFrame.
 Predict the clusters to group the cryptocurrencies using the original scaled DataFrame.
 Create a copy of the original data and add a new column with the predicted clusters.
+![bokeh_plot1](https://github.com/SteliosKosmidis/Cryptoclustering/assets/125541671/02e44a79-6484-4f1a-b315-2240a8c9630d)
+
 Create a scatter plot using hvPlot as follows:
 Set the x-axis as "PC1" and the y-axis as "PC2".
 Color the graph points with the labels found using K-means.
